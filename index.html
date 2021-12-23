@@ -1,0 +1,84 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="ml5.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+  <body class="w3-blue">
+    
+    <div class="w3-bar w3-yellow">
+      <span class="w3-bar-item">Sketch Identification Model</span>
+      <button class="w3-bar-item w3-hover-green w3-right w3-yellow" onclick="document.getElementById('sketchModal').style.display = 'block'">Sketches</button>
+    </div>
+    
+    <div id="sketchModal" class="w3-modal w3-animate-opacity">
+      <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+        <div class="container" style="padding: 25px; text-align: center;">
+          <span style="color:black;" onclick="document.getElementById('sketchModal').style.display='none'" class="w3-display-topright w3-hover-red w3-button">×</span>
+          <h3 style="color: black;">Sketch Inspiration</h3>
+          <hr>
+            <img src="sketch1.png" usemap="#image-map">
+
+<map name="image-map">
+    <area target="" alt="Ambulance" title="Ambulance" onclick="document.getElementById('Ambulance').style.display = 'block'" coords="251,17,210,45" shape="rect">
+    <area target="" alt="Basketball" title="Basketball" onclick="document.getElementById('Basketball').style.display = 'block'" coords="311,77,268,111" shape="rect">
+    <area target="" alt="Ship" title="Ship" onclick="document.getElementById('Ship').style.display = 'block'" coords="32,14,81,52" shape="rect">
+    <area target="" alt="Boomerang" title="Boomerang" onclick="document.getElementById('Ambulance').style.display = 'block'" coords="379,130,425,166" shape="rect">
+</map>
+        </div>
+      </div>
+    </div>
+    <div id="Ambulance" class="w3-modal w3-animate-opacity">
+      <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+        <div class="container" style="padding: 25px; text-align: center;">
+          <span style="color:black;" onclick="document.getElementById('Ambulance').style.display='none'" class="w3-display-topleft w3-hover-red w3-button">×</span>
+          <img src="https://lh3.googleusercontent.com/proxy/HGCYYLI93ccrOgQ22Stn6-MML6FVC0Xbv_SS5wHzi17c8ajHpiwxn1DJbT1uk78XuhOrpWWb64gkOzWF3JkTSwQsrTIy6Z8R__zO9RYnyEd5dbIoq3cg" alt="">
+            
+        </div>
+      </div>
+    </div>
+    <div id="Basketball" class="w3-modal w3-animate-opacity">
+      <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+        <div class="container" style="padding: 25px; text-align: center;">
+          <span style="color:black;" onclick="document.getElementById('Basketball').style.display='none'" class="w3-display-topleft w3-hover-red w3-button">×</span>
+          <img src="" alt="">
+            
+        </div>
+      </div>
+    </div>
+    <div id="Ship" class="w3-modal w3-animate-opacity">
+      <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+        <div class="container" style="padding: 25px; text-align: center;">
+          <span style="color:black;" onclick="document.getElementById('Ship').style.display='none'" class="w3-display-topleft w3-hover-red w3-button">×</span>
+          <img src="" alt="">
+            
+        </div>
+      </div>
+    </div>
+    <div id="Boomerang" class="w3-modal w3-animate-opacity">
+      <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+        <div class="container" style="padding: 25px; text-align: center;">
+          <span style="color:black;" onclick="document.getElementById('Boomerang').style.display='none'" class="w3-display-topleft w3-hover-red w3-button">×</span>
+            <img src="" alt="">
+          <hr>
+            
+        </div>
+      </div>
+    </div>
+    <div style="margin: 0px; padding:50px;" class="w3-container w3-green">
+      <p id="result"> What I think you sketched:</p>
+      <p id="confidence">How Confident I am:</p>
+      <button class="w3-button w3-red" onclick="clearCanvas()">Clear Canvas</button>
+      <br>
+      <br>
+      
+    </div>
+    <script src="sketch.js"></script>
+  
+
+
+
+</body></html><!--  -->
